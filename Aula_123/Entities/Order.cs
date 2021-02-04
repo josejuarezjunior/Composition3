@@ -40,9 +40,15 @@ namespace Aula_123.Entities
         public double Total()
         {
             double sum = 0.00;
-            /*"OrderItem" é a classe, "Item" é um numerador e "Items" 
+            /*"OrderItem" é a classe, "Item" é um objeto e "Items" 
              * é o nome da lista que contém itens do tipo "OrderItem",
-             * declarada e instanciada nessa classe!!!
+             * que é instanciada vazia no momento da declaração!!!
+             * SubTotal() é um método da classe "OrderItem".
+             *
+             * No "foreach" abaixo, é criado um objeto "Item", do tipo
+             * "OrderItem" na lista "Items".
+             * No "sum" é atribuído o método "SubTotal()", sobre o
+             * objeto "Item"!
              */
             foreach(OrderItem Item in Items)
             {
